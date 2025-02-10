@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body, html {
+    height: 100%;
+    width: 100%; 
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #d9a7c7, #fffcdc); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.tracker {
+    min-height: 150px;
+    background: #ffffff;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+}
+.tracker h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6a0572;
+    padding:14px 0;
+}
+.input_data {
+    font-size: larger;
+    margin: 15px 0;
+    
+}
+.input_data label {
+    font-weight: bold;
+    color: #6a0572;
+    /* background-color: #9b59b6; */
+}
+/* .user_id{
+    padding: 20px 0;;
+} */
+.input_data input {
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #6a0572;
+    transition: 0.3s ease-in-out;
+}
+button{
+    border: 1px solid #6a0572;
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+.input_data input:focus {
+    border: 1px solid #9b59b6;
+    box-shadow: 0px 0px 8px rgba(155, 89, 182, 0.5);
+}
+.user_info {
+    margin-top: 20px;
+    padding: 7px 15px;
+    background: linear-gradient(135deg, #6a0572, #a4508b);
+    color: white;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.name, .followers, .following, .repos {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+.name:hover, .followers:hover, .following:hover, .repos:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.name > p:first-child,
+.followers > p:first-child,
+.following > p:first-child,
+.repos > p:first-child {
+    font-weight: bold;
+}
+@media (max-width: 450px) {
+    .tracker {
+        max-width: 95%;
+        padding: 20px;
+    }
+    .input_data label{
+     overflow: hidden;
+     text-align: left;
+    }
+    .input_data input {
+       margin: 12px 0;;
+       overflow: hidden;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+
