@@ -34,7 +34,7 @@ const fetchGitUsers=async()=>{
                     <p>${data.public_repos}</p>
                 </div>`
 
-                input.value=''
+                // input.value=''
     }catch(err){
         console.error("Error fetching data:", err);
         alert("User not found! Please enter a valid GitHub username.");
